@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Live Love';
+    src: url('font/Live Love.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    background: linear-gradient(
+        180deg,
+        #fff8f9 0%,
+        #fff1f5 30%,
+        #ffe8ee 65%,
+        #ffdce6 100%
+    );
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+    color:#222;
+
+        background:linear-gradient(
+        -45deg,
+        #fff7f9,
+        #ffeef4,
+        #ffdfe9,
+        #fff4f7
+    );
+
+    background-size:400% 400%;
+
+    animation:gradientMove 12s ease infinite;
+
+}
+.bg-circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    z-index:-1;
+
+}
+
+.one{
+
+    width:320px;
+    height:320px;
+
+    background:#ff9bb4;
+
+    top:-100px;
+    left:-100px;
+
+    opacity:.35;
+
+}
+
+.two{
+
+    width:280px;
+    height:280px;
+
+    background:#ffc9d8;
+
+    right:-80px;
+    bottom:-80px;
+
+    opacity:.35;
+
+}
+
+.container{
+
+    max-width:450px;
+
+    text-align:center;
+
+}
+
+h1{
+
+    font-family:'Live Love', 'Poppins', sans-serif;
+    font-size:2rem;
+
+    font-weight:400;
+
+    margin-bottom:50px;
+
+    letter-spacing:1px;
+
+}
+
+.heart{
+
+    width:220px;
+
+    animation:heartbeat 1.8s infinite;
+
+    margin-bottom:60px;
+
+}
+
+.message{
+
+    font-size:1rem;
+
+    line-height:1.9;
+
+    color:#555;
+
+}
+
+.message p{
+
+    margin-bottom:18px;
+
+}
+
+.signature{
+
+    margin-top:35px;
+
+    color:#e63946;
+
+    font-weight:500;
+
+}
+
+@keyframes heartbeat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    20%{
+
+        transform:scale(1.1);
+
+    }
+
+    40%{
+
+        transform:scale(.95);
+
+    }
+
+    60%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    h1{
+
+        font-size:1.7rem;
+
+    }
+
+    .heart{
+
+        width:150px;
+
+    }
+
+    .message{
+
+        font-size:.95rem;
+
+    }
+
+}
