@@ -1,51 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>National Girlfriend Day ❤️</title>
+    <title>Happy Birthday, Bubbb</title>
+    <script>
+        const birthdayUnlockDate = new Date(2026, 9, 4, 0, 0, 0, 0);
+        const isBirthdayPreview = new URLSearchParams(window.location.search).get('preview') === '1';
+
+        if (!isBirthdayPreview && Date.now() < birthdayUnlockDate.getTime()) {
+            window.location.replace('countdown/');
+        }
+    </script>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="light-droplets.css">
 </head>
 <body>
 <div class="bg-circle one"></div>
 <div class="bg-circle two"></div>
-
+<div class="light-droplets" aria-hidden="true">
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+</div>
 
 <div class="container">
 
-    <h1>National Girlfriend Day</h1>
+    <p class="birthday-kicker">HARI SPESIALMU</p>
+    <h1><span class="birthday-script">Happy Birthday</span><span>Bubbb!</span></h1>
 
-    <img src="/img/love-svgrepo-com.svg" class="heart" alt="Heart">
+    <section class="letter" id="birthday-letter" aria-label="Surat ulang tahun">
+        <button class="envelope-button" id="envelope-button" type="button" aria-label="Buka surat ulang tahun" aria-expanded="false" aria-controls="birthday-message" title="Buka surat ulang tahun">
+            <span class="envelope__back" aria-hidden="true"></span>
+            <span class="envelope__paper" aria-hidden="true"></span>
+            <span class="envelope__front" aria-hidden="true"></span>
+            <span class="envelope__flap" aria-hidden="true"></span>
+            <span class="envelope__seal" aria-hidden="true"></span>
+        </button>
 
-    <div class="message">
+        <article class="message letter-paper" id="birthday-message" aria-hidden="true" tabindex="-1" hidden>
 
         <p>
-            Happy National Girlfriend Day, BUBBBB.
+            Semoga hari spesialmu dipenuhi bahagia, bubbb.
         </p>
 
         <p>
-            maap ya telat nyadarnya aku kira kamu gatau hari ini hari apa aowowkoakw, ya yang penting aku baru inget tadi,
-            sebenernya aku kemarin tawu dari tiktok cuman ya uda laa, tapi pas kamu bilang ga peka apa pula kataku, aku pas kerumah nenek mikir keras yang
-            apa yah, pas uda nyame rumah nenek langsung inget abis tu yauda aku buat la sebentar ini ya sederhana semoga kamu suka gituu btw
+            4 Oktober 2026, Hari ini adalah hari ulang tahunmu yang ke-19. Selamat ulang tahun cintaaaa semoga kamu panjang umur sehat selalu dan diberi kesehatan, sebelumnya aku minta maaf tentang yang dihari kamis yang dimana itu hari National Girlfriend Day, meskipun aku bilang sekarang tapi aku curahkan pake hati loh yaa,
+            jadi makasih yah bubb kamu masih sama aku sampai sekarang aku harap bisa sampai selamanya dan aku usahakan juga yang terbaik untuk kamu heheee, oh balik lagi ke hari ulang tahun mu aku ucapkan sekali lagi Selamat Ulang Tahun cintaaaaa
         </p>
-
-        <p>
-            ily bubb, mungkin aku suka ngeselin kami, tapi di setiap ngeselinnya aku, aku sayang baget sama kamu, jadii love u bub, (aku ngomong apa dah yang penting perasaan ku tersampaikan bub)
-            intinya aku sayang bib 
-        </p>
+        <div class="love-scene" id="love-scene" aria-label="Animasi hati dan tulisan I love you" hidden>
+            <svg class="love-scene__heart" viewBox="0 0 240 210" role="img" aria-label="Hati merah berdenyut">
+                <path d="M120 190 25 99C-14 51 53-12 103 30l17 17 17-17c50-42 117 21 78 69z" />
+            </svg>
+            <p class="love-scene__words">I LOVE YOU</p>
+            <p class="love-scene__sweet">CINTAAAAAA</p>
+        </div>
 
         <p class="signature">
-            asli daoa yang buat yaa
+            Dafa Ramadhan
         </p>
 
-    </div>
+        </article>
+    </section>
+
+    <section class="good-things" id="good-things" aria-labelledby="good-things-title" hidden>
+        <h2 id="good-things-title">About You</h2>
+        <div class="good-things__stage">
+            <img class="good-things__sticker good-things__sticker--mbg" src="img/mbg.jpg" alt="" aria-hidden="true">
+            <div class="good-things__grid">
+                <article class="good-thing"><img class="good-thing__photo" src="img/1.jpg" alt="Foto 1"><span class="good-thing__number">1.</span><span class="good-thing__icon" aria-hidden="true">✨</span><p>Jujur Kamu itu cantik banget bub.</p></article>
+                <article class="good-thing"><img class="good-thing__photo" src="img/2.jpg" alt="Foto 2"><span class="good-thing__number">2.</span><span class="good-thing__icon" aria-hidden="true">🌷</span><p>Kadang kamu juga suka ngeselin tapi aku its okay karena itu kamu.</p></article>
+                <article class="good-thing"><img class="good-thing__photo" src="img/3.jpg" alt="Foto 3"><span class="good-thing__number">3.</span><span class="good-thing__icon" aria-hidden="true">🦋</span><p>Kamu juga pernah melalui hari yang berat tapi kamu masih tetap tersenyum bub.</p></article>
+                <article class="good-thing"><img class="good-thing__photo" src="img/4.jpg" alt="Foto 4"><span class="good-thing__number">4.</span><span class="good-thing__icon" aria-hidden="true">💫</span><p>Sama kamu suka lebih terbuka sama aku bub itu lah kenapa aku suka hehe.</p></article>
+                <article class="good-thing"><img class="good-thing__photo" src="img/5.jpg" alt="Foto 5"><span class="good-thing__number">5.</span><span class="good-thing__icon" aria-hidden="true">☀️</span><p>Kadang kalo aku lagi pusing atau badmood kamu yang nyemangatin aku.</p></article>
+                <article class="good-thing"><img class="good-thing__photo" src="img/6.jpg" alt="Foto 6"><span class="good-thing__number">6.</span><span class="good-thing__icon" aria-hidden="true">💖</span><p>Intinya itu melampaui apa yang aku kira bub, Everything about you is perfect.</p></article>
+            </div>
+            <img class="good-things__sticker good-things__sticker--towewew" src="img/towewew.jpg" alt="" aria-hidden="true">
+        </div>
+    </section>
+
+    <section class="closing-note" id="closing-note" aria-labelledby="closing-note-title" hidden>
+        <p class="closing-note__eyebrow">SEBELUM KAMU CLOSE</p>
+        <h2 id="closing-note-title">Note dari aku</h2>
+        <p class="closing-note__message">Makasih ya cintaa, jujur buat ini aku kepikiran jir dari semalem pas awal bulan wkwkwk, tapi yaa ini aku buat sendiri pake ai juga tapi itu membantu aku buat code yang kayak gini jadiii yaa makacii bubb udah ada buat aku yaaa, dan jugaa maaf yaa aku cuman bisa ngasih ini buat kamu hehee, love you <3</p>
+        <p class="closing-note__signature">Dafa Ramadhan</p>
+    </section>
+
+    <section class="music-card" aria-label="Pemutar musik">
+        <div class="music-card__art" aria-hidden="true">
+            <img class="music-card__mockup" src="img/foto .png" alt="">
+        </div>
+
+        <div class="music-card__body">
+            <p class="music-card__eyebrow">LAGU UNTUKMU</p>
+            <p class="music-card__title" id="track-title">Monokrom</p>
+            <p class="music-card__artist" id="track-artist">Tulus</p>
+            <p class="music-card__status" id="track-status" aria-live="polite">Memuat lagu...</p>
+
+            <div class="music-card__timeline">
+                <progress id="track-progress" max="100" value="0" aria-label="Progres lagu"></progress>
+                <div class="music-card__time">
+                    <span id="track-current">0:00</span>
+                    <span id="track-duration">0:00</span>
+                </div>
+            </div>
+        </div>
+
+        <button class="music-card__toggle" id="track-toggle" type="button" aria-label="Putar lagu" title="Putar lagu">
+            <span class="music-card__toggle-icon" aria-hidden="true"></span>
+        </button>
+
+        <audio id="track-audio" autoplay preload="metadata">
+            <source src="music/TULUS%20-%20Monokrom%20(Official%20Music%20Video).m4a" type="audio/mp4">
+        </audio>
+    </section>
 
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
